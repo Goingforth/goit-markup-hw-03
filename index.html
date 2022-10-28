@@ -15,18 +15,21 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body class="page-body">
     <!--Section : Header-->
     <header class="page-header">
       <div class="container">
-        <nav>
-          <a href="./index.html" class="logo"><span>Web</span>Studio</a>
+        <a href="./index.html" class="logo"><span>Web</span>Studio</a>
+        <nav class="header-nav">
+          <!-- <a href="./index.html" class="logo"><span>Web</span>Studio</a>-->
           <ul class="site-nav click">
-            <li>
+            <li class="item">
               <a href="./index.html" class="link current">Студія</a>
             </li>
-            <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-            <li><a href="#" class="link">Контакти</a></li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфоліо</a>
+            </li>
+            <li class="item"><a href="#" class="link">Контакти</a></li>
           </ul>
         </nav>
         <ul class="connection click">
@@ -51,113 +54,120 @@
       <section class="section">
         <!--скрытый заголовок  -->
         <h2 class="visually-hidden">Особливості</h2>
-        <ul>
-          <li>
-            <h3 class="section-tytle">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="section-text">
-              Ідейні міркування, і навіть початок повсякденної роботи з
-              формування позиції.
-            </p>
-          </li>
-          <li>
-            <h3 class="section-tytle">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="section-text">
-              Завдання організації, особливо рамки і місце навчання кадрів тягне
-              у себе.
-            </p>
-          </li>
-          <li>
-            <h3 class="section-tytle">ПЛАНУВАННЯ</h3>
-            <p class="section-text">
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
-          <li>
-            <h3 class="section-tytle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="section-text">
-              Значимість цих проблем настільки очевидна, що реалізація планових
-              завдань.
-            </p>
-          </li>
-        </ul>
+        <div class="container">
+          <ul>
+            <li>
+              <h3 class="section-tytle">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="section-text">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li>
+              <h3 class="section-tytle">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="section-text">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li>
+              <h3 class="section-tytle">ПЛАНУВАННЯ</h3>
+              <p class="section-text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li>
+              <h3 class="section-tytle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="section-text">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!--Section : Чим ми займаємося-->
-      <section class="section">
+      <div class="container">
+      <section class="section work">
         <h2 class="section-tytle work">Чим ми займаємося</h2>
-        <ul>
-          <li>
-            <img
-              src="./images/example_work/example_work1.jpg"
-              alt="Приклад роботи1"
-              width="370"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/example_work/example_work2.jpg"
-              alt="Приклад роботи2"
-              width="370"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/example_work/example_work3.jpg"
-              alt="Приклад роботи3"
-              width="370"
-            />
-          </li>
-        </ul>
+           <ul class="examples">
+            <li class="example">
+              <img class="example-work"
+                src="./images/example_work/example_work1.jpg"
+                alt="Приклад роботи1"
+                width="370"
+              />
+            </li>
+            <li class="example">
+              <img class="example-work"
+                src="./images/example_work/example_work2.jpg"
+                alt="Приклад роботи2"
+                width="370"
+              />
+            </li>
+            <li class="example">
+              <img class="example-work"
+                src="./images/example_work/example_work3.jpg"
+                alt="Приклад роботи3"
+                width="370"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
       <!--Section : Наша команда-->
+<div class="container">
       <section class="section team">
-        <h2 class="section-tytle team">Наша команда</h2>
-        <ul>
-          <li>
-            <img
-              src="./images/team/img1.jpg"
-              alt="Ігор Дем'яненко Дизайнер продукту"
-              width="270"
-            />
-            <h3 class="section-tytle name">Ігор Дем'яненко</h3>
-            <p class="section-text prof">Product Designer</p>
-          </li>
-          <li>
-            <img
-              src="./images/team/img2.jpg"
-              alt="Ольга Рєпіна Розробник інтерфейсу"
-              width="270"
-            />
-            <h3 class="section-tytle name">Ольга Рєпіна</h3>
-            <p class="section-text prof">Frontend Developer</p>
-          </li>
-          <li>
-            <img
-              src="./images/team/img3.jpg"
-              alt="Микола Тарасов Маркетинг"
-              width="270"
-            />
-            <h3 class="section-tytle name">Микола Тарасов</h3>
-            <p class="section-text prof">Marketing</p>
-          </li>
-          <li>
-            <img
-              src="./images/team/img4.jpg"
-              alt="Михайло Єрмаков UI Designer"
-              width="270"
-            />
-            <h3 class="section-tytle name">Михайло Єрмаков</h3>
-            <p class="section-text prof">UI Designer</p>
-          </li>
-        </ul>
+                  <h2 class="section-tytle team">Наша команда</h2>
+          <ul class="examples">
+            <li class="example">
+              <img
+                src="./images/team/img1.jpg"
+                alt="Ігор Дем'яненко Дизайнер продукту"
+                width="270"
+              />
+              <h3 class="section-tytle name">Ігор Дем'яненко</h3>
+              <p class="section-text prof">Product Designer</p>
+            </li>
+            <li class="example">
+              <img
+                src="./images/team/img2.jpg"
+                alt="Ольга Рєпіна Розробник інтерфейсу"
+                width="270"
+              />
+              <h3 class="section-tytle name">Ольга Рєпіна</h3>
+              <p class="section-text prof">Frontend Developer</p>
+            </li>
+            <li class="example">
+              <img
+                src="./images/team/img3.jpg"
+                alt="Микола Тарасов Маркетинг"
+                width="270"
+              />
+              <h3 class="section-tytle name">Микола Тарасов</h3>
+              <p class="section-text prof">Marketing</p>
+            </li>
+            <li class="example">
+              <img
+                src="./images/team/img4.jpg"
+                alt="Михайло Єрмаков UI Designer"
+                width="270"
+              />
+              <h3 class="section-tytle name">Михайло Єрмаков</h3>
+              <p class="section-text prof">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!--Section : Footer-->
     <footer>
+      <div class="container basement">
       <a href="./index.html" class="logo"><span>Web</span>Studio</a>
       <address>
         <ul class="address click">
           <li>
-            <a
+            <a 
               href="https://goo.gl/maps/WBjJaMZuF31mkBre8"
               target="_blank"
               rel="noreferrer noopener"
@@ -166,15 +176,16 @@
             >
           </li>
           <li>
-            <a href="mailto:info@devstudio.com" class="link"
+            <a href="mailto:info@devstudio.com" class="link mail"
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="link phone">+38 096 111 11 11</a>
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>

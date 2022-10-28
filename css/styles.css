@@ -25,18 +25,40 @@ body {
   letter-spacing: 0.03em;
 }
 
+h1,
+h2,
+h3,
+p,ul
+{
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: 0 auto;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
 
-  outline: 2px solid tomato;
+  /*padding-top: 24px;
+    padding-bottom: 25px;*/
+/* для отладки */
+  outline: 1px solid tomato;
+  background-color: gray;
+  /* для отладки */
 }
 
 ul {
   list-style: none;
+ /* padding-inline-start: 0;*/
 }
 /* -------стилизация Header-------*/
+.page-header {
+ /* padding-top: 24px;
+  padding-bottom: 25px;*/
+  background-color: green; /* для отладки */
+}
 /* стилизация logo */
 .logo {
   color: var(--logo-black-color);
@@ -46,11 +68,30 @@ ul {
   line-height: 1.2;
   text-decoration: none;
 }
+.page-header .logo{
+  margin-right: 93px;
+}
 .logo span {
   color: var(--accent-color);
 }
 /*   ----- конец стилизации logo -------*/
 /* стилизация nav и connection*/
+
+.page-header .container {
+  display: flex;
+   align-items: center;
+}
+ .site-nav{
+  display: flex;
+}
+.link .item:not(:first-child) {
+  margin-left: 50px;
+}
+.connection{
+  display: flex;
+}
+
+
 .site-nav .link,
 .connection .link {
   color: var(--header-color);
@@ -103,6 +144,11 @@ ul {
   letter-spacing: 0.06em;
 }
 /* стилизация секций */
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+  
+}
 /* для скрытых заголовков*/
 .visually-hidden {
   position: absolute;
@@ -116,6 +162,23 @@ ul {
   clip-path: inset(50%);
   margin: -1px;
 }
+ .work h2 ,.team h2 {
+  margin-bottom: 50px; 
+} 
+.examples {
+  display: flex;
+  outline: 2px solid orange;
+ /* justify-content: space-between;*/
+ }
+ /*.example-work{
+  width: 370px;
+  margin: 0;
+ }*/
+ .example:not(:last-child){
+  margin-right: 30px;
+ }
+
+
 .section-tytle {
   font-size: 14px;
   line-height: 1.14;
@@ -140,12 +203,15 @@ ul {
   line-height: 1.19;
 
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .section-text.prof {
   font-size: 16px;
   line-height: 1.19;
 
   text-align: center;
+  margin-bottom: 30px;
   }
   /*  стилизация фона секции team*/
   .team{
@@ -154,12 +220,18 @@ ul {
 
 /* стилизуем footer*/
 /*-- footer style -- */
+.container.basement{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 footer {
   background-color: var(--background-color-footer);
 }
 
 footer .logo {
   color: var(--h1-footer-color);
+  display: inline-block;
+   margin-bottom: 20px;
 }
 .address.click {
   font-style: normal;
@@ -170,8 +242,15 @@ footer .logo {
 .map {
   color: var(--h1-footer-color);
   text-decoration: none;
+  display: inline-block;
+  margin-bottom: 9px;
+}
+.mail {
+  display: inline-block;
+  margin-bottom: 9px;
 }
 .address .link {
+  display: inline-block;
   color: var(--mail-phone-color-footer);
   text-decoration: none;
 }
