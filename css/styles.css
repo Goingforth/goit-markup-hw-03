@@ -170,10 +170,7 @@ ul {
   outline: 2px solid orange;
  /* justify-content: space-between;*/
  }
- /*.example-work{
-  width: 370px;
-  margin: 0;
- }*/
+ 
  .example:not(:last-child){
   margin-right: 30px;
  }
@@ -217,13 +214,18 @@ ul {
   .team{
     background-color: var(--background-button-portfolio);
   } 
+  /* стилизация секций портфолио*/
+  .example
 
 /* стилизуем footer*/
 /*-- footer style -- */
-.container.basement{
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+.container-basement{
+  width: 1200px;
+    margin: 0 auto;
+    padding: 60px 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 footer {
   background-color: var(--background-color-footer);
 }
@@ -231,6 +233,8 @@ footer {
 footer .logo {
   color: var(--h1-footer-color);
   display: inline-block;
+  
+  margin-top: 60px;
    margin-bottom: 20px;
 }
 .address.click {
@@ -243,16 +247,20 @@ footer .logo {
   color: var(--h1-footer-color);
   text-decoration: none;
   display: inline-block;
-  margin-bottom: 9px;
+   margin-bottom: 9px;
 }
 .mail {
   display: inline-block;
   margin-bottom: 9px;
 }
+.phone{
+  margin-bottom: 60px;
+}
 .address .link {
   display: inline-block;
   color: var(--mail-phone-color-footer);
   text-decoration: none;
+  
 }
 
 /*  стилизация кнопок портфолио */
@@ -282,7 +290,7 @@ footer .logo {
   cursor: pointer;
 }
 /* стилизация работ портфолио*/
-.example .section-tytle {
+.example-works .section-tytle {
   color: var(--header-color);
 
   font-size: 18px;
@@ -291,7 +299,7 @@ footer .logo {
   letter-spacing: 0.06em;
   text-decoration: none;
 }
-.example .section-text {
+.example-works .section-text {
   color: var(--p-color);
 
   font-size: 16px;
