@@ -9,6 +9,7 @@
 /* цвет фона кнопок портфолио #F5F4FA */
 /* цвет первой части лого #000000 */
 /* цвет рамки портфолио #EEEEE*/
+/* цвет нижней рамки хэдера #ECECEC 1px */
 :root {
   --header-color: #212121;
   --p-color: #757575;
@@ -20,6 +21,7 @@
   --background-button-portfolio: #f5f4fa;
   --logo-black-color: #000000;
   --border-card-portfolio: #EEEEEE;
+  --border-botton-header: #ECECEC;
 }
 body {
   color: var(--header-color);
@@ -61,9 +63,7 @@ ul {
 }
 /* -------стилизация Header-------*/
 .page-header {
- /* padding-top: 24px;
-  padding-bottom: 25px;*/
-  background-color: green; /* для отладки */
+ border-bottom: 1px solid var(--border-botton-header);
 }
 /* стилизация logo */
 .logo {
@@ -73,6 +73,9 @@ ul {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+ 
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
 .page-header .logo{
   margin-right: 93px;
@@ -90,13 +93,16 @@ ul {
  .site-nav{
   display: flex;
 }
-.link .item:not(:first-child) {
+.site-nav .item:not(:first-child) {
   margin-left: 50px;
 }
 .connection{
   display: flex;
+  margin-left: auto;
 }
-
+.email{
+margin-right: 50px;
+}
 
 .site-nav .link,
 .connection .link {
