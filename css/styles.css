@@ -20,8 +20,8 @@
   --mail-phone-color-footer: rgba(255, 255, 255, 0.6);
   --background-button-portfolio: #f5f4fa;
   --logo-black-color: #000000;
-  --border-card-portfolio: #EEEEEE;
-  --border-botton-header: #ECECEC;
+  --border-card-portfolio: #eeeeee;
+  --border-botton-header: #ececec;
 }
 body {
   color: var(--header-color);
@@ -33,12 +33,11 @@ h1,
 h2,
 h3,
 p,
-ul
-{
+ul {
   margin: 0;
   padding: 0;
 }
-ul{
+ul {
   padding-inline-start: 0;
 }
 
@@ -48,22 +47,14 @@ ul{
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
-
-  /*padding-top: 24px;
-    padding-bottom: 25px;*/
-/* для отладки */
-  outline: 1px solid tomato;
- /* background-color: gray;*/
-  /* для отладки */
 }
 
 ul {
   list-style: none;
- /* padding-inline-start: 0;*/
 }
 /* -------стилизация Header-------*/
 .page-header {
- border-bottom: 1px solid var(--border-botton-header);
+  border-bottom: 1px solid var(--border-botton-header);
 }
 /* стилизация logo */
 .logo {
@@ -73,11 +64,11 @@ ul {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
- 
+
   margin-top: 24px;
   margin-bottom: 25px;
 }
-.page-header .logo{
+.page-header .logo {
   margin-right: 93px;
 }
 .logo span {
@@ -88,20 +79,20 @@ ul {
 
 .page-header .container {
   display: flex;
-   align-items: center;
+  align-items: center;
 }
- .site-nav{
+.site-nav {
   display: flex;
 }
 .site-nav .item:not(:first-child) {
   margin-left: 50px;
 }
-.connection{
+.connection {
   display: flex;
   margin-left: auto;
 }
-.email{
-margin-right: 50px;
+.email {
+  margin-right: 50px;
 }
 
 .site-nav .link,
@@ -125,11 +116,24 @@ margin-right: 50px;
 }
 /*   ----- конец стилизации Header-------*/
 /* -----стилизация секции hero-----*/
+.hero {
+  text-align: center;
+  background-color: var(--background-color-footer);
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.order.button {
+  width: 216px;
+  height: 50px;
+  text-align: center;
+
+  margin: 0 auto;
+  display: block;
+  border-radius: 4px;
+}
 /* ---- конец стилизации секции hero -----*/
 .hero h1 {
   color: var(--h1-footer-color);
-  background-color: var(--background-color-footer);
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -138,6 +142,7 @@ margin-right: 50px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 .button {
   color: var(--h1-footer-color);
@@ -156,10 +161,12 @@ margin-right: 50px;
   letter-spacing: 0.06em;
 }
 /* стилизация секций */
-.section{
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
-  
+}
+.section.differ {
+  padding-bottom: 0;
 }
 /* для скрытых заголовков*/
 .visually-hidden {
@@ -174,17 +181,17 @@ margin-right: 50px;
   clip-path: inset(50%);
   margin: -1px;
 }
- .work h2 ,.team h2 {
-  margin-bottom: 50px; 
-} 
+.work h2,
+.team h2 {
+  margin-bottom: 50px;
+}
 .examples {
   display: flex;
-  outline: 2px solid orange;
-  }
-  
- .example:not(:last-child){
+}
+
+.example:not(:last-child) {
   margin-right: 30px;
- }
+}
 
 .section-tytle {
   font-size: 14px;
@@ -219,57 +226,58 @@ margin-right: 50px;
 
   text-align: center;
   margin-bottom: 30px;
-  }
-  /* стилизация секции Особенности*/
-    .differences{
-       display: flex;
-    }
-    .differences-property{
-       width: 270px;
-    }
-    .differences-property:not(:last-child){
-      margin-right: 30px;
-    }
-    .differences-property .section-tytle {
-        margin-bottom: 10px;
-       }
-  /*  стилизация фона секции team*/
-  .team{
-    background-color: var(--background-button-portfolio);
-  } 
-  /* стилизация секций портфолио*/
-  .filter{
-    display: flex;
-    justify-content: center;
-    margin-top: 94px;
-    margin-bottom: 50px;
-  }
-  .filter-choose:not(:last-child){
-    margin-right: 8px;
-  }
-    .sample {
-      width: 370px;
-    }
-  
-    .sample:not(:nth-child(3n)) {
-      margin-right: 30px;
-    }
- 
-   .sample:not(:nth-last-child(-n+3)) {
-   margin-bottom: 30px;
- }
+}
+/* стилизация секции Особенности*/
+.differences {
+  display: flex;
+}
+.differences-property {
+  width: 270px;
+}
+.differences-property:not(:last-child) {
+  margin-right: 30px;
+}
+.differences-property .section-tytle {
+  margin-bottom: 10px;
+}
+/*  стилизация фона секции team*/
+.team {
+  background-color: var(--background-button-portfolio);
+}
+/* стилизация секций портфолио*/
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
 
- .sample{
-   border: 1px solid var(--border-card-portfolio);
- }
+.choose:not(:last-child) {
+  margin-right: 8px;
+}
 
-  .sample .section-tytle {
-    margin: 20px 24px 4px 24px;
-      }
- 
- .sample .section-text{
+.sample {
+  width: 370px;
+}
+
+.sample:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.sample:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.sample {
+  border: 1px solid var(--border-card-portfolio);
+}
+
+.sample .section-tytle {
+  margin: 20px 24px 4px 24px;
+}
+
+.sample .section-text {
   margin: 0 24px 20px 24px;
- }
+}
 /* стилизуем footer*/
 /*-- footer style -- */
 footer {
@@ -281,7 +289,7 @@ footer .logo {
   display: inline-block;
 
   margin-top: 60px;
-   margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .address.click {
   font-style: normal;
@@ -293,20 +301,19 @@ footer .logo {
   color: var(--h1-footer-color);
   text-decoration: none;
   display: inline-block;
-   margin-bottom: 9px;
+  margin-bottom: 9px;
 }
 .mail {
   display: inline-block;
   margin-bottom: 9px;
 }
-.phone{
+.phone {
   margin-bottom: 60px;
 }
 .address .link {
   display: inline-block;
   color: var(--mail-phone-color-footer);
   text-decoration: none;
-  
 }
 
 /*  стилизация кнопок портфолио */
@@ -339,10 +346,10 @@ footer .logo {
   cursor: pointer;
 }
 /* стилизация работ портфолио*/
-.example-works{
+.example-works {
   display: flex;
   flex-wrap: wrap;
- }
+}
 .example-works .section-tytle {
   color: var(--header-color);
 
