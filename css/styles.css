@@ -32,27 +32,28 @@ body {
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p,
 ul {
   margin: 0;
   padding: 0;
 }
-ul {
-  padding-inline-start: 0;
-}
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 ul {
   list-style: none;
 }
 /* -------стилизация Header-------*/
+.main {
+  max-width: 696px;
+}
 .page-header {
   border-bottom: 1px solid var(--border-botton-header);
 }
@@ -142,7 +143,7 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
 }
 .button {
   color: var(--h1-footer-color);
@@ -241,6 +242,9 @@ ul {
   margin-bottom: 10px;
 }
 /*  стилизация фона секции team*/
+.examples .example {
+  background-color: var(--h1-footer-color);
+}
 .team {
   background-color: var(--background-button-portfolio);
 }
@@ -329,6 +333,7 @@ footer .logo {
   line-height: 1.62;
   /* identical to box height, or 162% */
   text-align: center;
+  padding: 6px 22px;
 }
 .button-portfolio.current {
   color: var(--h1-footer-color);
@@ -336,6 +341,7 @@ footer .logo {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  padding: 6px 25px;
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
