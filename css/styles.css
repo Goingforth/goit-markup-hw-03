@@ -65,9 +65,6 @@ ul {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
-
-  margin-top: 24px;
-  margin-bottom: 25px;
 }
 .page-header .logo {
   margin-right: 93px;
@@ -75,6 +72,10 @@ ul {
 .logo span {
   color: var(--accent-color);
 }
+.item .link {
+  display: block;
+}
+
 /*   ----- конец стилизации logo -------*/
 /* стилизация nav и connection*/
 
@@ -100,6 +101,7 @@ ul {
 .connection .link {
   color: var(--header-color);
   text-decoration: none;
+  padding: 32px 0px 28px;
 }
 .click a:hover,
 .click a:focus {
@@ -285,6 +287,9 @@ ul {
 }
 .sample a.link {
   margin: 0;
+}
+.img-portfolio {
+  display: block;
 }
 /* стилизуем footer*/
 /*-- footer style -- */
