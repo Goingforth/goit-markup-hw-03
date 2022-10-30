@@ -50,6 +50,11 @@ ul {
 ul {
   list-style: none;
 }
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 /* -------стилизация Header-------*/
 .main {
   max-width: 696px;
@@ -284,9 +289,7 @@ ul {
 .portfolio-item a.link {
   margin: 0;
 }
-.img-portfolio {
-  display: block;
-}
+
 /* стилизуем footer*/
 /*-- footer style -- */
 footer {
